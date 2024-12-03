@@ -20,4 +20,12 @@
     <Resource Name="vi" Value="範例WEBPART" />
     <Resource Name="id" Value="範例WEBPART" />
   </CustomControl>
+
+  <CustomControl ControlType="CDS_Lab_WebPart_LabWebPart" ControlPath="~/CDS/Lab/WebPart/UC_LabWebPart.ascx" DefaultTitle="LAB_WEBPART" TitleStyle="i" ZoneIndex="0">
+    <Resource Name="zh-CN" Value="LAB_WEBPART" />
+    <Resource Name="zh-TW" Value="LAB_WEBPART" />
+    <Resource Name="en-US" Value="LAB_WEBPART" />
+    <Resource Name="vi" Value="LAB_WEBPART" />
+    <Resource Name="id" Value="LAB_WEBPART" />
+  </CustomControl>
 </CustomControls>

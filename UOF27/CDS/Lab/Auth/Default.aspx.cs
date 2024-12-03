@@ -1,4 +1,5 @@
-﻿using Ede.Uof.Utility.Configuration;
+﻿using Ede.Uof.Common.ChoiceCenter;
+using Ede.Uof.Utility.Configuration;
 using Ede.Uof.Utility.Page;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ public partial class CDS_Lab_Auth_Default : BasePage
         {
             Setting setting = new Setting();
             //將自訂的setting的item 放到選人元件XML的屬性內
-
+            UC_ChoiceList.XML= setting["LabWebPartAuth"];
         }
     }
 
@@ -23,11 +24,11 @@ public partial class CDS_Lab_Auth_Default : BasePage
     {
        
         Setting setting = new Setting();
-
+        setting["LabWebPartAuth"] = UC_ChoiceList.XML;
         //將選人元件XML的屬性放到自訂的setting的item 內
-      
 
-        ScriptManager.RegisterStartupScript(this, GetType(),
+
+       ScriptManager.RegisterStartupScript(this, GetType(),
             Guid.NewGuid().ToString(), string.Format("alert('{0}');", lblAlert.Text), true);
 
 
