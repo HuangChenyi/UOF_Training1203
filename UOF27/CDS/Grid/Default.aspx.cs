@@ -70,10 +70,10 @@ public partial class CDS_Grid_Default : Ede.Uof.Utility.Page.BasePage
         DemoUCO uco = new DemoUCO();
         DataTable dt = uco.GetUserData();
 
-        dt.Columns[0].Caption = "帳號";
-        dt.Columns[1].Caption = "姓名";
+        //dt.Columns[0].Caption = "帳號";
+        //dt.Columns[1].Caption = "姓名";
 
-        dt.Columns.RemoveAt(2);
+        //dt.Columns.RemoveAt(2);
         e.Datasource = dt;
     }
     protected void grid_AfterExport()

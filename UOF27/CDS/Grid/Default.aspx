@@ -6,7 +6,7 @@
     <Fast:Grid ID="grid" OnBeforeExport="grid_BeforeExport" PageSize="3" AllowSorting="true" runat="server" OnSorting="grid_Sorting" OnPageIndexChanging="grid_PageIndexChanging" DataKeyNames="USER_GUID" AutoGenerateColumns="false" AllowPaging="true">
 <EnhancePagerSettings FirstImageUrl="" FirstAltImageUrl="" PreviousImageUrl="" NextImageUrl="" LastImageUrl="" LastAltImage="" PageNumberCssClass="" PageNumberCurrentCssClass="" PageInfoCssClass="" PageRedirectCssClass="" NextIAltImageUrl="" PreviousAltImageUrl="" ShowHeaderPager="True"></EnhancePagerSettings>
 
-        <ExportExcelSettings  AllowExportToExcel="true" ExportType="DataSource" />          
+        <ExportExcelSettings  AllowExportToExcel="true" ExportType="GridContent" />          
           <Columns>
                         <asp:BoundField HeaderText="帳號" DataField="ACCOUNT" ItemStyle-Width="200px" SortExpression="ACCOUNT" >
 <ItemStyle Width="200px"></ItemStyle>
