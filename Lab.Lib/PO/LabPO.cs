@@ -14,7 +14,7 @@ namespace Lab.Lib.PO
         internal DataTable GetProductList()
         {
             //從web.config點選連線字串
-            string connStr = System.Configuration.ConfigurationManager.ConnectionStrings[""].ConnectionString;
+            string connStr = System.Configuration.ConfigurationManager.ConnectionStrings["connTOERP"].ConnectionString;
 
             //重新建構資料庫物件，將連線指到北風資料庫
             m_db = new Ede.Uof.Utility.Data.DatabaseHelper(connStr);
@@ -28,7 +28,7 @@ namespace Lab.Lib.PO
             DataTable dt = new DataTable();
 
             //執行SQL，將執行結果放在Table上
-
+            dt.Load(this.m_db.ExecuteReader(cmdTxt));
             return dt;
 
 
